@@ -1,0 +1,26 @@
+{
+  "name": "test-project",
+  "version": "1.0.0",
+  "description": "A Personal project",
+  "main": "app.js",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon --inspect app.js",
+    "start": "npm run dev",
+    "unit": "jest --config test/unit/jest.conf.js --coverage",
+    "test": "npm run unit",
+    "build": "node build/build.js"
+  },
+  "dependencies": {
+    "discord.js": "^12.1.1",
+    "install": "^0.13.0",
+    "npm": "^6.14.4"
+  },
+  "devDependencies": {
+    "axios": "^0.16.2"
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  }
+}
